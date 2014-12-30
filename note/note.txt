@@ -1,0 +1,15 @@
+-- lista de solo directorios
+ls -la /usr | grep ^d
+
+
+## herramienta de corte en el texto file.txt
+cut -c 1-3 amigos.txt
+
+cut -d ':' -f 1 amigos.txt
+
+cut -d ':' -f 2 amigos.txt
+
+## lista interezannte : filtra por bash y Delimita :y toma el 1 y 7  de (:) 
+[d=delimiter]
+[f=field]
+cat /etc/passwd | grep bash | cut -d ':' -f 1,7
